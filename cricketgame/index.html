@@ -31,14 +31,74 @@
     }
     else if(compChoice === 'Stump'){
         resultMsg = 'computer won.';
-    }
-else{
-    resultMsg = 'Computer Won.';
-}
+    } 
+
 alert(`user have chosen Bat, computer choice is ${compChoice} and ${resultMsg}`);
     ">Bat</button> 
 
-<button >Ball</button>
-    <button >Stump</button>
+<button  onclick=" //console.log('you have chosen Bat');
+     randomNo = Math.random() * 3;
+    
+        if( randomNo > 0 && randomNo <=1){
+    compChoice = 'Bat';
+    //console.log('computer choice is '+compChoice);
+    }
+
+    else if (randomNo > 1 && randomNo <= 2){
+    compChoice ='Ball';
+      //  console.log('computer choice is '+compChoice);
+    }
+
+    else { 
+        compChoice= 'Stump';
+      //  console.log('computer choice is '+compChoice);
+    } 
+    //console.log(`computer choice is ${compChoice}`);
+    
+    if(compChoice === 'Ball'){
+    resultMsg = 'It`s a Tie.';
+    }
+
+    else if(compChoice === 'Bat'){
+        resultMsg = 'Computer Won.';
+    }
+
+    else if(compChoice === 'Stump'){
+        resultMsg = 'User Won';
+    } 
+
+
+alert(`user have chosen Ball, computer choice is ${compChoice} and ${resultMsg}`);
+    ">Ball</button>
+    
+    <button onclick=" //console.log('you have chosen Bat');
+     randomNo = Math.random() * 3;
+    
+    if( randomNo > 0 && randomNo <=1){
+    compChoice = 'Bat';
+    //console.log('computer choice is '+compChoice);
+    }
+    else if (randomNo > 1 && randomNo <= 2){
+    compChoice ='Ball';
+      //  console.log('computer choice is '+compChoice);
+    }
+    else { 
+        compChoice= 'Stump';
+      //  console.log('computer choice is '+compChoice);
+    } 
+    //console.log(`computer choice is ${compChoice}`);
+    
+    if(compChoice === 'Ball'){
+    resultMsg = 'Computer Won.';
+    }
+    else if(compChoice === 'Bat'){
+        resultMsg = 'Use Won.';
+    }
+    else if(compChoice === 'Stump'){
+        resultMsg = 'It`s a Tie';
+    } 
+
+alert(`user have chosen Stump, computer choice is ${compChoice} and ${resultMsg}`);
+    " >Stump</button>
 </body>
 </html>
