@@ -7,20 +7,9 @@
 <body>
     <h1>Bat Ball Stump game</h1>
     <button onclick=" //console.log('you have chosen Bat');
-    let randomNo = Math.random() * 3;
-    let compChoice ;
-    if( randomNo > 0 && randomNo <=1){
-    compChoice = 'Bat';
-    //console.log('computer choice is '+compChoice);
-    }
-    else if (randomNo > 1 && randomNo <= 2){
-    compChoice ='Ball';
-      //  console.log('computer choice is '+compChoice);
-    }
-    else { 
-        compChoice= 'Stump';
-      //  console.log('computer choice is '+compChoice);
-    } 
+    
+    generateComputerChoice();
+
     //console.log(`computer choice is ${compChoice}`);
     let resultMsg;
     if(compChoice === 'Ball'){
@@ -37,23 +26,8 @@ alert(`user have chosen Bat, computer choice is ${compChoice} and ${resultMsg}`)
     ">Bat</button> 
 
 <button  onclick=" //console.log('you have chosen Bat');
-     randomNo = Math.random() * 3;
     
-        if( randomNo > 0 && randomNo <=1){
-    compChoice = 'Bat';
-    //console.log('computer choice is '+compChoice);
-    }
-
-    else if (randomNo > 1 && randomNo <= 2){
-    compChoice ='Ball';
-      //  console.log('computer choice is '+compChoice);
-    }
-
-    else { 
-        compChoice= 'Stump';
-      //  console.log('computer choice is '+compChoice);
-    } 
-    //console.log(`computer choice is ${compChoice}`);
+    generateComputerChoice();
     
     if(compChoice === 'Ball'){
     resultMsg = 'It`s a Tie.';
@@ -72,21 +46,8 @@ alert(`user have chosen Ball, computer choice is ${compChoice} and ${resultMsg}`
     ">Ball</button>
     
     <button onclick=" //console.log('you have chosen Bat');
-     randomNo = Math.random() * 3;
     
-    if( randomNo > 0 && randomNo <=1){
-    compChoice = 'Bat';
-    //console.log('computer choice is '+compChoice);
-    }
-    else if (randomNo > 1 && randomNo <= 2){
-    compChoice ='Ball';
-      //  console.log('computer choice is '+compChoice);
-    }
-    else { 
-        compChoice= 'Stump';
-      //  console.log('computer choice is '+compChoice);
-    } 
-    //console.log(`computer choice is ${compChoice}`);
+    generateComputerChoice();
     
     if(compChoice === 'Ball'){
     resultMsg = 'Computer Won.';
@@ -100,5 +61,7 @@ alert(`user have chosen Ball, computer choice is ${compChoice} and ${resultMsg}`
 
 alert(`user have chosen Stump, computer choice is ${compChoice} and ${resultMsg}`);
     " >Stump</button>
+    
+    <script src = "javascript/script.js"></script>
 </body>
 </html>
