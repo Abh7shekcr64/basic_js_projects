@@ -1,3 +1,15 @@
 body {
     text-align: center;
+    background-color : rgb(222, 190, 249);
+    
+}
+h1{
+    color: rgb(0, 3, 7);
+    }
+.button{
+    background-color : lightgreen;
+margin : 5px;
+border-radius : 10px;
+
+
 }

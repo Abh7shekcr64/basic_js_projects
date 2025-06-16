@@ -6,11 +6,14 @@
 </head>
 <body>
     <h1>Bat Ball Stump game</h1>
-    <button onclick=" //console.log('you have chosen Bat');
-    
-    generateComputerChoice();
+    <button class ="button" onclick=" //console.log('you have chosen Bat');
+    let compChoice;
+    compChoice = generateComputerChoice();
 
     //console.log(`computer choice is ${compChoice}`);
+
+    /*
+
     let resultMsg;
     if(compChoice === 'Ball'){
     resultMsg = 'User Won.';
@@ -21,14 +24,22 @@
     else if(compChoice === 'Stump'){
         resultMsg = 'computer won.';
     } 
+*/
+let resultMsg;
+resultMsg = getResult('Bat', compChoice);
 
 alert(`user have chosen Bat, computer choice is ${compChoice} and ${resultMsg}`);
     ">Bat</button> 
 
-<button  onclick=" //console.log('you have chosen Bat');
+<button class ="button"  onclick=" //console.log('you have chosen Bat');
+
+compChoice = generateComputerChoice();
+    resultMsg = getResult('Ball',compChoice);
+/*
     
     generateComputerChoice();
-    
+
+
     if(compChoice === 'Ball'){
     resultMsg = 'It`s a Tie.';
     }
@@ -41,11 +52,18 @@ alert(`user have chosen Bat, computer choice is ${compChoice} and ${resultMsg}`)
         resultMsg = 'User Won';
     } 
 
-
+*/
 alert(`user have chosen Ball, computer choice is ${compChoice} and ${resultMsg}`);
     ">Ball</button>
     
-    <button onclick=" //console.log('you have chosen Bat');
+    <button class ="button" onclick=" //console.log('you have chosen Bat');
+
+
+    compChoice = generateComputerChoice();
+    resultMsg = getResult('Ball',compChoice);
+
+
+    /*
     
     generateComputerChoice();
     
@@ -53,12 +71,13 @@ alert(`user have chosen Ball, computer choice is ${compChoice} and ${resultMsg}`
     resultMsg = 'Computer Won.';
     }
     else if(compChoice === 'Bat'){
-        resultMsg = 'Use Won.';
+        resultMsg = 'User Won.';
     }
     else if(compChoice === 'Stump'){
         resultMsg = 'It`s a Tie';
     } 
 
+    */
 alert(`user have chosen Stump, computer choice is ${compChoice} and ${resultMsg}`);
     " >Stump</button>
     
