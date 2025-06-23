@@ -1,15 +1,30 @@
 body {
-    text-align: center;
-    background-color : rgb(222, 190, 249);
+    text-align:center;
+    background-color:rgb(222, 190, 249);
     
 }
 h1{
-    color: rgb(0, 3, 7);
-    }
+    color:rgb(0, 3, 7);
+    font-family:cursive;
+    font-weight:200;
+}
 .button{
-    background-color : lightgreen;
-margin : 5px;
-border-radius : 10px;
+background-color:lightgreen;
+margin:5px;
+height:40px;
+width:70px;
+border-radius:10px;
+}
 
-
+img{
+    width:550px;
+    height:550px ;
+    display:block;
+    margin:20px auto;
+    border-radius:20px;  /* for rounded corner */
+    box-shadow:0 200px 400px 200px 400px rgba(0,0,0,0.3);
+    background:transparent;
+    mix-blend-mode:multiply;
+    opacity:0.95;
+    
 }
